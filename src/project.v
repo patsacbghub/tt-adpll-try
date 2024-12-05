@@ -15,8 +15,8 @@ module tt_um_patsacbghub_adpll (
 	    .tdc_reset(ui_in[1]), .out(uo_out[0]), 
 	    .vco_in(uo_out[4:1]), .desired_out(uo_out[5]));
 	wire _unused = &{ui_in[7:2], rst_n, ena , uio_in} ;
-	assign uio_out <= 0 ;
-	assign uio_oe <= 0 ;
+	assign uio_out = 0 ;
+	assign uio_oe = 0 ;
 endmodule
 
 
